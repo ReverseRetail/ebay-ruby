@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'helper'
-require 'ebay/oauth/client_credentials_grant'
+require 'ebay_bs/oauth/client_credentials_grant'
 
-module EbayBS
+module EbayBs
   module Oauth
     class TestClientCredentialsGrant < Minitest::Test
       def setup

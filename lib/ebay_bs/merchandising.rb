@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'ebay/config'
-require 'ebay/requestable'
+require 'ebay_bs/config'
+require 'ebay_bs/requestable'
 
-module EbayBS
+module EbayBs
   # Retrieves information about products or item listings on eBay to help you
   # sell more merchandise to eBay buyers
   #

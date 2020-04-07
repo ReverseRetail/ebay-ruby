@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require 'helper'
-require 'ebay/shopping'
+require 'ebay_bs/shopping'
 
-module EbayBS
+module EbayBs
   class TestShopping < Minitest::Test
     def setup
       VCR.insert_cassette('shopping', record: :new_episodes)
-      @request = EbayBS::Shopping.new(response_encoding: 'JSON').sandbox
+      @request = EbayBs::Shopping.new(response_encoding: 'JSON').sandbox
     end
 
     def teardown

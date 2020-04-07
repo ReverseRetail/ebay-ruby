@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
 require 'helper'
-require 'ebay/browse'
-require 'ebay/oauth/client_credentials_grant'
+require 'ebay_bs/browse'
+require 'ebay_bs/oauth/client_credentials_grant'
 
-module EbayBS
+module EbayBs
   class TestBrowse < Minitest::Test
     def setup
       VCR.insert_cassette('browse', record: :new_episodes)
 
       # I'm not running the tests in the sandbox environment
       access_token = Oauth::ClientCredentialsGrant.new.mint_access_token
-      @request = EbayBS::Browse.new(campaign_id: '123',
+      @request = EbayBs::Browse.new(campaign_id: '123',
                                   country: 'US',
                                   zip: '19406',
                                   access_token: access_token)

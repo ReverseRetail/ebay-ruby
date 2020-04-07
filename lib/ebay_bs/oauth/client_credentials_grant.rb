@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'ebay/config'
-require 'ebay/requestable'
+require 'ebay_bs/config'
+require 'ebay_bs/requestable'
 
-module EbayBS
+module EbayBs
   module Oauth
     # Mints an access token to use in API requests
     #

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'helper'
-require 'ebay/requestable'
+require 'ebay_bs/requestable'
 
-module EbayBS
+module EbayBs
   class TestRequestable < Minitest::Test
     def setup
       klass = Class.new do

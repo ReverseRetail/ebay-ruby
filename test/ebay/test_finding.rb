@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require 'helper'
-require 'ebay/finding'
+require 'ebay_bs/finding'
 
-module EbayBS
+module EbayBs
   class TestFinding < Minitest::Test
     def setup
       VCR.insert_cassette('finding')
-      @request = EbayBS::Finding.new(response_data_format: 'JSON').sandbox
+      @request = EbayBs::Finding.new(response_data_format: 'JSON').sandbox
     end
 
     def teardown

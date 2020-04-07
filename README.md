@@ -15,11 +15,11 @@ Retrieve purchasable items, check out, then track orders without visiting the eB
 Using the Browse API, you can create a rich selection of items for your buyers to browse with keyword and category searches. You can also provides the ability to eBay members to add items and change the quantity of an item in their eBay shopping cart as well as view the contents of their eBay cart.
 
 ```ruby
-require 'ebay/browse'
-require 'ebay/oauth/client_credentials_grant'
+require 'ebay_bs/browse'
+require 'ebay_bs/oauth/client_credentials_grant'
 
 access_token = Oauth::ClientCredentialsGrant.new.mint_access_token
-request = EbayBS::Browse.new(campaign_id: '123',
+request = EbayBs::Browse.new(campaign_id: '123',
                            country: 'US',
                            zip: '19406',
                            access_token: access_token)
@@ -37,9 +37,9 @@ Search eBay; build search and browse experiences.
 The Finding API provides programmatic access to the next generation search capabilities on the eBay platform. It lets you search and browse for items listed on eBay and provides useful metadata to refine searches and enhance the search experience.
 
 ```ruby
-require 'ebay/finding'
+require 'ebay_bs/finding'
 
-request = EbayBS::Finding.new(response_data_format: 'JSON')
+request = EbayBs::Finding.new(response_data_format: 'JSON')
 response = request.find_items_by_keywords('iphone')
 
 JSON.parse(response)
@@ -54,9 +54,9 @@ Retrieve public items and user data to create shopping and marketing application
 The eBay Shopping API makes it easy to search for things on eBay.
 
 ```ruby
-require 'ebay/shopping'
+require 'ebay_bs/shopping'
 
-request = EbayBS::Shopping.new(response_encoding: 'JSON')
+request = EbayBs::Shopping.new(response_encoding: 'JSON')
 response = request.find_products('QueryKeywords' => 'tolkien')
 
 JSON.parse(response)
@@ -67,9 +67,9 @@ JSON.parse(response)
 The Merchandising API provides item and product recommendations that can be used to cross-sell and up-sell eBay items to buyers.
 
 ```ruby
-require 'ebay/merchandising'
+require 'ebay_bs/merchandising'
 
-request = EbayBS::Merchandising.new(response_data_format: 'JSON')
+request = EbayBs::Merchandising.new(response_data_format: 'JSON')
 response = request.get_most_watched_items
 
 JSON.parse(response)

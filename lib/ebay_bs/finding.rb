@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'ebay/config'
-require 'ebay/requestable'
+require 'ebay_bs/config'
+require 'ebay_bs/requestable'
 
-module EbayBS
+module EbayBs
   # The Finding API lets you search for and browse items listed on eBay and
   # provides useful metadata to refine searches.
   #

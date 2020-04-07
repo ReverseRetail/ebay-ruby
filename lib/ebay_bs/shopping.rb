@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'ebay/config'
-require 'ebay/requestable'
+require 'ebay_bs/config'
+require 'ebay_bs/requestable'
 
-module EbayBS
+module EbayBs
   # The eBay Shopping API makes it easy to search for things on eBay.
   #
   # @see https://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPI_FormatOverview.html
