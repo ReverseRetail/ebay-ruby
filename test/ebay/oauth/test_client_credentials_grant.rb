@@ -3,7 +3,7 @@
 require 'helper'
 require 'ebay/oauth/client_credentials_grant'
 
-module Ebay
+module EbayBS
   module Oauth
     class TestClientCredentialsGrant < Minitest::Test
       def setup

@@ -3,7 +3,7 @@
 require 'ebay/config'
 require 'ebay/requestable'
 
-module Ebay
+module EbayBS
   # The Finding API lets you search for and browse items listed on eBay and
   # provides useful metadata to refine searches.
   #

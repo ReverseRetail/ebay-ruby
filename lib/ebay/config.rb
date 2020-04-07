@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Ruby wrapper to the eBay APIs
-module Ebay
+module EbayBS
   # Configures credentials for accessing the eBay APIs
   # @yield {Config}
   def self.configure

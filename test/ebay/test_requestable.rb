@@ -3,7 +3,7 @@
 require 'helper'
 require 'ebay/requestable'
 
-module Ebay
+module EbayBS
   class TestRequestable < Minitest::Test
     def setup
       klass = Class.new do

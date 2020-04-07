@@ -3,7 +3,7 @@
 require 'ebay/config'
 require 'ebay/requestable'
 
-module Ebay
+module EbayBS
   # Retrieves information about products or item listings on eBay to help you
   # sell more merchandise to eBay buyers
   #

@@ -3,7 +3,7 @@
 require 'ebay/config'
 require 'ebay/requestable'
 
-module Ebay
+module EbayBS
   module Oauth
     # Mints an access token to use in API requests
     #

@@ -2,7 +2,7 @@
 
 require 'http'
 
-module Ebay
+module EbayBS
   # Adds an HTTP client and ability to switch to the eBay Sandbox environment
   module Requestable
     class << self

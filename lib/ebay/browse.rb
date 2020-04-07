@@ -5,7 +5,7 @@ require 'base64'
 require 'ebay/config'
 require 'ebay/requestable'
 
-module Ebay
+module EbayBS
   # Using the Browse API, you can create a rich selection of items for your
   # buyers to browse with keyword and category searches. It also provides the
   # ability to eBay members to add items and change the quantity of an item in

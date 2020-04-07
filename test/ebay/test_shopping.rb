@@ -3,11 +3,11 @@
 require 'helper'
 require 'ebay/shopping'
 
-module Ebay
+module EbayBS
   class TestShopping < Minitest::Test
     def setup
       VCR.insert_cassette('shopping', record: :new_episodes)
-      @request = Ebay::Shopping.new(response_encoding: 'JSON').sandbox
+      @request = EbayBS::Shopping.new(response_encoding: 'JSON').sandbox
     end
 
     def teardown

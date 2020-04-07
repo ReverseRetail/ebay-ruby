@@ -5,7 +5,7 @@ require 'ebay/version'
 
 Gem::Specification.new do |gem|
   gem.name     = 'ebay-ruby'
-  gem.version  = Ebay::VERSION
+  gem.version  = EbayBS::VERSION
   gem.authors  = ['Hakan Ensari']
   gem.email    = ['me@hakanensari.com']
   gem.homepage = 'https://github.com/hakanensari/ebay-ruby'

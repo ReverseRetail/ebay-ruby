@@ -3,7 +3,7 @@
 require 'ebay/config'
 require 'ebay/requestable'
 
-module Ebay
+module EbayBS
   # The eBay Shopping API makes it easy to search for things on eBay.
   #
   # @see https://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPI_FormatOverview.html
